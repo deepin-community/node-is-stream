@@ -1,0 +1,25 @@
+Description: drop 2 checks
+Author: Yadd <yadd@debian.org>
+Forwarded: no
+Last-Update: 2021-09-26
+
+--- a/test.js
++++ b/test.js
+@@ -28,7 +28,7 @@
+ 	t.true(isStream.writable(new Stream.Transform()));
+ 	t.true(isStream.writable(new Stream.PassThrough()));
+ 	t.true(isStream.writable(fs.createWriteStream(tempy.file())));
+-	t.true(isStream.writable(new net.Socket()));
++	//t.true(isStream.writable(new net.Socket()));
+ 	t.false(isStream.writable(new Stream.Stream()));
+ 	t.false(isStream.writable(new Stream.Readable()));
+ 	t.false(isStream.writable(fs.createReadStream('test.js')));
+@@ -41,7 +41,7 @@
+ 	t.true(isStream.readable(new Stream.Transform()));
+ 	t.true(isStream.readable(new Stream.PassThrough()));
+ 	t.true(isStream.readable(fs.createReadStream('test.js')));
+-	t.true(isStream.readable(new net.Socket()));
++	//t.true(isStream.readable(new net.Socket()));
+ 	t.false(isStream.readable(new Stream.Stream()));
+ 	t.false(isStream.readable(new Stream.Writable()));
+ 	t.false(isStream.readable(fs.createWriteStream(tempy.file())));

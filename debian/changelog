@@ -1,0 +1,51 @@
+node-is-stream (2.0.1-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints.
+    + node-is-stream: Add Multi-Arch: foreign.
+
+  [ Yadd ]
+  * Modernize debian/watch
+  * Fix GitHub tags regex
+  * Update standards version to 4.6.0, no changes needed.
+  * New upstream version 2.0.1
+  * Refresh patch
+  * Fix test
+
+ -- Yadd <yadd@debian.org>  Sun, 26 Sep 2021 07:27:42 +0200
+
+node-is-stream (2.0.0-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Jelmer Vernooĳ ]
+  * Use secure copyright file specification URI.
+  * Trim trailing whitespace.
+
+  [ Debian Janitor ]
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Repository, Repository-
+    Browse.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+  * Set upstream metadata fields: Bug-Submit.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.0
+  * Add "Rules-Requires-Root: no"
+  * Change section to javascript
+  * Add debian/gbp.conf
+  * Use dh-sequence-nodejs auto install
+  * New upstream version 2.0.0
+  * Enable upstream test using tape instead of ava
+
+ -- Xavier Guimard <yadd@debian.org>  Sun, 18 Oct 2020 14:28:55 +0200
+
+node-is-stream (1.1.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #845231)
+
+ -- Sruthi Chandran <srud@disroot.org>  Mon, 21 Nov 2016 22:31:37 +0530
